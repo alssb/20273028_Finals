@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SubActivity">
+    <LinearLayout
+        android:background="@drawable/gradient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/xbacktab"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/design_icon"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:text="디자인"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:background="#ffffff"
+            android:id="@+id/xchristmas"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:src="@drawable/christmasnail" />
+        <ImageView
+            android:background="#ffffff"
+            android:id="@+id/xmoonstar"
+            android:src="@drawable/moonstarnail"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"/>
+
+        <ImageView
+            android:id="@+id/xpinkblue"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:background="#ffffff"
+            android:src="@drawable/pinkbluenail" />
+
+        <ImageView
+            android:id="@+id/xchanel"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:background="#ffffff"
+            android:src="@drawable/chanelnail" />
+
+        <ImageView
+            android:id="@+id/xhalloween"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:background="#ffffff"
+            android:src="@drawable/halloweennail" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:onClick="onButtonClicked"
+            android:id="@+id/xbutton1"
+            android:textColor="#757575"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#ffffff"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:text="1"/>
+        <Button
+            android:onClick="onButtonClicked2"
+            android:id="@+id/xbutton2"
+            android:textColor="#757575"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#FFFFFF"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:text="2"/>
+        <Button
+            android:onClick="onButtonClicked3"
+            android:id="@+id/xbutton3"
+            android:textColor="#757575"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#FFFFFF"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:text="3"/>
+        <Button
+            android:onClick="onButtonClicked4"
+            android:id="@+id/xbutton4"
+            android:textColor="#757575"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#FFFFFF"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:text="4"/>
+        <Button
+            android:onClick="onButtonClicked5"
+            android:id="@+id/xbutton5"
+            android:textColor="#757575"
+            android:backgroundTint="#FFFFFF"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:text="5"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:background="#C4DDCF"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:id="@+id/xrv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</LinearLayout>

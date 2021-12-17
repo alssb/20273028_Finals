@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MenuActivity">
+
+    <TextView
+        android:id="@+id/menu_title"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="셀프 네일"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/xdesign"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="#C6FFC107"
+        android:drawableTop="@drawable/design_icon"
+        android:padding="65dp"
+        android:textSize="17dp"
+        android:textColor="#ffffff"
+        android:text="디자인" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/xweb"
+            android:layout_width="200dp"
+            android:layout_height="230dp"
+            android:layout_marginRight="13dp"
+            android:backgroundTint="#68B2BC"
+            android:drawableTop="@drawable/shop_icon"
+            android:onClick="OnclickedWeb"
+            android:padding="65dp"
+            android:text="재료쇼핑"
+            android:textColor="#ffffff"
+            android:textSize="17dp" />
+
+        <Button
+            android:id="@+id/xcontact"
+            android:layout_width="200dp"
+            android:layout_height="230dp"
+            android:backgroundTint="#B74DB151"
+            android:drawableTop="@drawable/call_icon"
+            android:onClick="OnclickedContact"
+            android:padding="65dp"
+            android:text="컨택트"
+            android:textColor="#ffffff"
+            android:textSize="17dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/xlogout"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="#918F8F"
+        android:textColor="#ffffff"
+        android:text="로그아웃" />
+
+</LinearLayout>
